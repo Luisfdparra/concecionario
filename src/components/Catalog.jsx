@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import VehicleList from './VehiculoList';
+import VehicleList from './src/components/VehicleList.jsx';
 
 const Cataloge = () => {
   const vehicles = [
@@ -20,7 +20,7 @@ const Cataloge = () => {
 
   return (
     <View>
-      <VehicleList vehicles={vehicles} />
+      <VehicleList Vehiculo={vehicles} />
     </View>
   );
 };
