@@ -6,7 +6,7 @@ const Vehicle = ({ imageUrl, description, price }) => {
         <View style={styles.container}>
             <View>
                 <Image
-                    style={styles.img} source={require('./assets/toyota_corolla.jpg')}
+                    style={styles.img} source={{uri:imageUrl,}}
                 />
                 <Text style={styles.title}>{description}</Text>
                 <Text style={[styles.title, styles.price]}>$ {price}</Text>
